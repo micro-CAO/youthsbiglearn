@@ -6,3 +6,4 @@
 
 因此，我和 @hugefunny 共同利用python，写了这款程序！
 
+点击“**released**，即可获取python程序。使用前请右键使用文本编辑器（推荐visual studio code）浏览源码及其注释
