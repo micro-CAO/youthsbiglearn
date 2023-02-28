@@ -6,7 +6,7 @@
 
 因此，我和 @hugefunny 共同利用python，写了这款程序！
 
-点击“**released**，即可获取python程序。使用前请右键使用文本编辑器（推荐visual studio code）浏览源码及其注释
+点击“**released**”，即可获取python程序。使用前请右键使用文本编辑器（推荐visual studio code）浏览源码及其注释
 
 
 # 使用说明
@@ -31,3 +31,5 @@
 没有意外应该就可以运行了
 
 目前测试没有bug，有问题还请hugefunny@hotmail.com或ung225625@outlook.com或ckfu20219@gmail.com
+# 提示
+我们的程序只能直接用于南宁市的青年大学习网站！你可以提交issue让我们适配其他地区的青年大学习。
