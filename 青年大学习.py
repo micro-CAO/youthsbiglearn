@@ -6,22 +6,34 @@ from selenium import webdriver ##注意：必须安装selenium模块！详情请
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
+import pandas as pd
 #导入浏览器自动化模块以及辅助模块
 
 browser = webdriver.Edge()
 browser.get('http://qndxx.bestcood.com/nanning/daxuexi/')
 ##要操作的网址，作者以南宁青年大学习编写。其他地区的大学习可能需要变更按钮id等
 
-NameList = ['真白花音','李田所','卢本伟']
+#NameList = ['真白花音','李田所','卢本伟']
 #姓名列表
 
-IDList = ['233333','114514','1721729']
+#IDList = ['233333','114514','1721729']
 #ID列表
+
+
+
+data = pd.read_csv("nameList.csv")
+
+NameList = data["姓名"]
+IDList = data["学习编号"]
+
+maxLen = len(data)
+
+
 
 mount = 0
 #初始化数值
 
-while mount < 3:
+while mount < maxLen:
     #学生数量
 
     userName = browser.find_element(By.ID,'userName')
